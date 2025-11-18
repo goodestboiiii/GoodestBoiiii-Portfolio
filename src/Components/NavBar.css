@@ -1,4 +1,4 @@
-/* General styles */
+
 .navbar {
     position: sticky;
     top: 0;
@@ -58,9 +58,7 @@
     transition: all 0.3s;
   }
   
-  /* Responsive Design */
-  
-  /* Mobile menu */
+
   @media (max-width: 768px) {
     .nav-links ul {
       position: absolute;
@@ -87,7 +85,7 @@
       display: block;
     }
   
-    /* Rotate bars when menu is open */
+
     .bar.open:nth-child(1) {
       transform: rotate(45deg) translateY(8px);
     }
