@@ -1,45 +1,49 @@
-/*Font imports (Teko, Poppins)*/
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
 
-/* General Styling for the Home Section */
 .home-section {
-    padding: 0.1rem 1rem;
+    padding: 3rem 10rem;
     background-color: #1D1919;
     color: #FFF9E1;
     max-width: 100%;
 }
 
 .home-title {
-    color: #FFF9E1;
-    margin: 0 auto;
-    max-width: 1200px;
-    font-family: "Teko", sans-serif;
+    text-align: center;
+    margin-bottom: 2rem;
     user-select: none;
 }
 
-/* Title Styling */
+  .home-title h1 {
+    text-align: left;
+    font-size: 48px; 
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Teko", sans-serif;
+    color: #FFF9E1;
+  }
+
+  .divider {
+    border: none;
+    height: 1px;
+    background-color: #FFF9E1;
+    width: 100%;
+    margin-bottom: 2rem;
+  }
+
+
 .home-section h1 {
     text-align: left;
-    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-size: 48px; 
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: "Teko", sans-serif;
     user-select: none;
 }
 
-/* Horizontal Rule Styling */
-.home {
-    border: none;
-    height: 1px;
-    background-color: #FFF9E1;
-    width: 100%;
-    margin-bottom: 2rem;
-    user-select: none;
-}
 
-/* Flex container for image and text description */
 .home-container {
     display: flex;
     justify-content: space-between;
@@ -89,9 +93,6 @@
     text-align: left;
 }
 
-.highlighted-text {
-    color: #F34343;
-}
 
 /* Buttons styling */
 .home-buttons {
@@ -136,9 +137,7 @@
     color:#F34343;
 }
 
-/* Responsive Design */
 
-/* For larger screens */
 @media (min-width: 1200px) {
     .home-container {
         padding: 1rem 10rem;
@@ -166,7 +165,7 @@
     }
 }
 
-/* For tablets (768px to 1199px) */
+
 @media (max-width: 1199px) {
     .home-container {
         flex-direction: row;
@@ -199,13 +198,18 @@
     }
 }
 
-/* For mobile devices (max-width: 768px) */
+
 @media (max-width: 768px) {
+    .home-section{
+        padding: 2rem 5rem;
+    }
     .home-section h1 {
         font-size: 36px;
+        text-align: center;
     }
     .home-title{
         padding: 0 5rem;
+        text-align: center;
     }
 
     .home-container {
@@ -217,6 +221,7 @@
     .home-image,
     .home-description {
         flex-basis: 100%;
+        padding: 1.5rem;
     }
 
     .profile-img {
@@ -250,15 +255,20 @@
     }
 }
 
-/* For mobile devices (max-width: 480px) */
+
 @media (max-width: 480px) {
+    .home-section{
+        padding: 1rem;
+    }
     .home-section h1 {
         font-size: 1.8rem;
         text-align: center;
     }
-
+    
+    
     .home-title{
         padding: 0 5rem;
+        text-align: center;
     }
 
     .home-container {
@@ -274,7 +284,7 @@
 
     .profile-img {
         width: auto;
-        height: 400;
+        height: 300px;
         margin-bottom: 1rem;
     }
 

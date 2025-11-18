@@ -2,14 +2,14 @@ import React from 'react';
 import './Contact.css';
 import ContactImg from '../img/contact.png'; 
 import { ReactComponent as Email } from '../img/bx-envelope.svg';
-import { ReactComponent as IG } from '../img/bxl-instagram.svg';
+import {ReactComponent as Git} from '../img/bxl-github.svg';
 import { ReactComponent as FB } from '../img/bxl-facebook.svg';
 import { ReactComponent as Link } from '../img/bxl-linkedin.svg';
 
 const Contact = () => {
   return (
     <section className="contact-section" id='contact'>
-      <div className='home-title'> 
+      <div className='contact-title'> 
       <h1>Contact Me</h1>
       <hr className="divider" />
       </div> 
@@ -21,7 +21,7 @@ const Contact = () => {
 
         {/* Text Section */}
         <div className="contact-text">
-          <h2 className="contact-title">
+          <h2 className="contact-label">
             Ready to take your project to <span className="highlighted-text">the next level</span>? Let’s talk!
           </h2>
           <ul className="contact-social">
@@ -30,8 +30,8 @@ const Contact = () => {
               <p>jeanzey.romano@gmail.com</p>
             </li>
             <li className="social-item">
-              <IG/>
-              <p><a href="https://www.instagram.com/goodest_boiiii/profilecard/" target="_blank">goodest_boiiii</a></p>
+              <Git/>
+              <p><a href="https://github.com/goodestboiiii" target="_blank">goodestboiiii</a></p>
             </li>
             <li className="social-item">
               <FB/>
@@ -44,10 +44,11 @@ const Contact = () => {
           </ul>
         </div>
       </div>
+
             {/* Footer Section */}
             <footer className="footer">
         <div className="footer-container">
-          <p>© 2024 Copyright | Jeanzey Clye Romano</p>
+          <p>© 2025 Copyright | Jeanzey Clye Romano</p>
         </div>
       </footer>
     </section>

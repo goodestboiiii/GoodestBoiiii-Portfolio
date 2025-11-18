@@ -1,4 +1,3 @@
-/* General section styling */
 .projects-section {
     padding: 3rem 10rem;
     background-color: #1D1919;
@@ -13,7 +12,7 @@
   
   .project-title h1 {
     text-align: left;
-    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-size: 48px; 
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: "Teko", sans-serif;
@@ -28,27 +27,27 @@
     margin-bottom: 2rem;
   }
   
-  /* Project container styling */
+
   .projects-container {
     display: grid;
     grid-template-columns: 1fr;
     gap: 2rem;
   }
   
-  /* Top row with two projects side by side */
+
   .projects-top {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
   }
   
-  /* Bottom row with a single large project */
+
   .projects-bottom {
     display: grid;
     grid-template-columns: 1fr;
   }
   
-  /* Project card */
+
   .project-card {
     border-radius: 8px;
     padding: 1.5rem;
@@ -57,25 +56,25 @@
 
   }
   
-/* Project image*/
+
 .project-img {
     width: 100%;
     height: auto;
     border-radius: 8px;
     margin-bottom: 1rem;
     
-    /* Start with grayscale and no scale */
+
     filter: grayscale(100%);
-    transition: filter 0.4s ease, transform 0.4s ease; /* Smooth transition for both filter and scale */
+    transition: filter 0.4s ease, transform 0.4s ease; 
   }
   
-  /* On hover: remove grayscale and slightly scale the image */
+ 
   .project-card:hover .project-img {
-    filter: grayscale(0%); /* Full color */
-    transform: scale(1.05); /* Slight scale effect */
+    filter: grayscale(0%); 
+    transform: scale(1.05); 
   }
   
-  /* Project tags */
+ 
   .project-tags {
     display: flex;
     gap: 1rem;
@@ -92,12 +91,15 @@
     text-align: left;
   }
   
-  /* Responsive design */
-  
-  /* Tablet (below 768px) */
+ 
   @media (max-width: 768px) {
     .projects-section {
       padding: 2rem 5rem;
+    }
+
+        .project-title h1 {
+      font-size: 2rem;
+      text-align: center;
     }
   
     .projects-top {
@@ -105,14 +107,15 @@
     }
   }
   
-  /* Mobile (below 480px) */
+
   @media (max-width: 480px) {
     .projects-section {
       padding: 1.5rem;
     }
   
-    .about-title h1 {
+    .project-title h1 {
       font-size: 1.5rem;
+      text-align: center;
     }
   
     .divider {

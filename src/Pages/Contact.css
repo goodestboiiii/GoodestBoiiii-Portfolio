@@ -1,10 +1,10 @@
-/* Font imports (Teko, Poppins) */
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Teko:wght@300..700&display=swap');
 
-/* General Styling */
+
 .contact-section {
-  padding: 2rem 3rem;
+  padding: 3rem 10rem;
   background-color: #1D1919;
   color: #FFF9E1;
   max-width: 100%;
@@ -12,7 +12,7 @@
 
 .contact-section h1 {
     text-align: left;
-    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-size: 48px; 
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: "Teko", sans-serif;
@@ -25,12 +25,12 @@
   justify-content: space-between;
   align-items: center;
   gap: 2rem;
-  flex: 1; /* Takes up all remaining space */
+  flex: 1; 
 }
 
 .contact-image {
   flex-basis: 45%;
-  text-align: center; /* Ensures image centers on smaller screens */
+  text-align: center; 
   user-select: none;
 }
 
@@ -39,18 +39,25 @@
   height: auto;
 }
 
-/* Text and Contact Info */
+
 .contact-text {
   flex-basis: 50%;
 }
 
 .contact-title {
-  font-size: 32px;
-  font-family: 'Teko', sans-serif;
-  font-weight: 400;
-  margin-bottom: 2rem;
-  text-align: left;
+ text-align: center;
+ margin-bottom: 2rem;
+ user-select: none;
 }
+
+.contact-title h1 {
+    text-align: left;
+    font-size: 48px; 
+    font-weight: 400;
+    margin-bottom: 1rem;
+    font-family: "Teko", sans-serif;
+    color: #FFF9E1;
+  }
 
 .highlighted-text {
   color: #F34343;
@@ -117,8 +124,9 @@
   margin: 0;
   bottom: 0;
   left: 0;
-  width: 100%; /* Stretches across the full width */
+  width: 100%; 
   overflow: hidden;
+  border-radius: 8px;
 }
 
 .footer p {
@@ -127,9 +135,7 @@
 }
 
 
-/* Responsive Design */
 
-/* For larger screens */
 @media (min-width: 1200px) {
   .contact-container {
     padding: 2rem 10rem;
@@ -137,6 +143,7 @@
   
   .contact-title {
     font-size: 48px;
+    text-align: center;
   }
 
   .con-img {
@@ -144,15 +151,16 @@
   }
 }
 
-/* For tablets (768px to 1199px) */
+
 @media (max-width: 1199px) {
   .contact-container {
     padding: 1rem 3rem;
     flex-direction: row;
   }
 
-  .contact-title {
-    font-size: 36px;
+  .contact-title h1{
+    font-size: 2rem;
+    text-align: center;
   }
 
   .con-img {
@@ -160,16 +168,21 @@
   }
 }
 
-/* For mobile devices (max-width: 768px) */
 @media (max-width: 768px) {
+
+  .contact-section{
+    padding: 2rem 5rem;
+  }
+  
   .contact-container {
     flex-direction: column;
     padding: 1rem;
     text-align: center;
   }
 
-  .contact-title {
-    font-size: 28px;
+  .contact-title h1{
+    font-size: 2rem;
+    text-align: center;
   }
 
   .contact-text {
@@ -178,7 +191,7 @@
 
   .contact-image {
     flex-basis: 100%;
-    margin-bottom: 1.5rem; /* Adds space between image and text */
+    margin-bottom: 1.5rem; 
   }
 
   .con-img {
@@ -189,14 +202,16 @@
     justify-content: center;
   }
 
-  /* Responsive Design for mobile devices (max-width: 480px) */
+  
 @media (max-width: 480px) {
     .contact-section h1 {
+      text-align: center;
       font-size: 28px;
     }
     
     .contact-title {
-      padding: 0 2rem;
+      padding: 1.5rem;
+      text-align: center;
     }
   
     .contact-container {
@@ -211,8 +226,8 @@
     }
   
     .con-img {
-      width: 100%; /* Set image width to 100% for smaller screens */
-      height: auto; /* Adjust height automatically */
+      width: 100%; 
+      height: auto; 
       margin-bottom: 1rem;
     }
   

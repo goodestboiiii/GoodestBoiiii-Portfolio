@@ -1,13 +1,18 @@
 .skills-section {
-    padding: 3rem 0;
+    padding: 3rem 10rem;
     background-color: #1D1919;
     font-family: 'Poppins', sans-serif;
   }
   
+    .skills-title {
+    text-align: center;
+    margin-bottom: 2rem;
+    user-select: none;
+  }
   
   .skills-title h1 {
     text-align: left;
-    font-size: 48px; /* Reduced for better scaling on smaller screens */
+    font-size: 48px; 
     font-weight: 400;
     margin-bottom: 1rem;
     font-family: "Teko", sans-serif;
@@ -18,9 +23,7 @@
     border: none;
     height: 1px;
     background-color: #FFF9E1;
-    width: 100%;
     margin-bottom: 2rem;
-    user-select: none;
   }
 
 .skills-container {
@@ -74,14 +77,14 @@
     align-items: center;
     margin: 15px;
 
-    /* Start with grayscale and no scale */
+    
     filter: grayscale(100%);
-    transition: filter 0.4s ease, transform 0.4s ease; /* Smooth transition for both filter and scale */
+    transition: filter 0.4s ease, transform 0.4s ease; 
 }
 
 .icon:hover{
-    filter: grayscale(0%); /* Full color */
-    transform: scale(1.05); /* Slight scale effect */
+    filter: grayscale(0%); 
+    transform: scale(1.05); 
 }
 
 
@@ -97,8 +100,37 @@
     font-size: 1rem;
     color: #F34343;
 }
-/* Media Queries for responsiveness */
+
+
+@media (min-width: 1200px) {
+.skills-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
+
+@media (max-width: 1199px) {
+  .skills-boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+    .skill-box {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+}
+
 @media (max-width: 768px) {
+     .skills-section{
+        padding: 2rem 3rem;
+    }
     .skills-boxes {
         flex-direction: column;
         align-items: center;
@@ -109,8 +141,9 @@
         margin-bottom: 20px;
     }
 
-    .skills-title {
+    .skills-title h1 {
         font-size: 2rem;
+        text-align: center;
     }
 
     .skill-box h2 {
@@ -132,12 +165,20 @@
 }
 
 @media (max-width: 480px) {
-    .skills-title {
+    .skills-section{
+        padding: 1rem;
+    }
+    .skills-title h1 {
         font-size: 1.8rem;
+        text-align: center;
+    }
+    .skills-boxes {
+        flex-direction: column;
+        align-items: center;
     }
 
     .skill-box h2 {
-        font-size: 1.1rem;
+        font-size: 1rem;
     }
 
     .skill-box p {
@@ -151,5 +192,5 @@
 
     .icon p {
         font-size: 0.8rem;
-    }
+    } 
 }
