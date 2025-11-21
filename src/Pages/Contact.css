@@ -116,10 +116,8 @@
 /* Footer */
 
 .footer {
-  background-color: #F34343;
   color: #FFF9E1;
   padding-top: 1rem;
-  padding-bottom: 1rem;
   text-align: center;
   margin: 0;
   bottom: 0;
@@ -153,6 +151,9 @@
 
 
 @media (max-width: 1199px) {
+  .contact-section{
+    padding: 2rem;
+  }
   .contact-container {
     padding: 1rem 3rem;
     flex-direction: row;

@@ -37,7 +37,7 @@
     display: flex;
     justify-content: space-around;
     margin-bottom: 50px;
-    padding: 0 6rem;
+    padding: 2rem;
 }
 
 .skill-box {
@@ -100,6 +100,18 @@
     color: #F34343;
 }
 
+@media (max-width: 1199px){
+
+    .skills-section h1 {
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .skills-boxes{
+        padding: 2rem;
+    }
+}
+
 @media (max-width: 768px) {
 
     .skills-section h1 {
@@ -149,6 +161,10 @@
         text-align: center;
     }
 
+    .skills-boxes{
+        padding: 1rem;
+    }
+
     .skill-box h2 {
         font-size: 1rem;
     }
@@ -166,3 +182,4 @@
         font-size: 0.8rem;
     } 
 }
+

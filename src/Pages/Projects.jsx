@@ -17,8 +17,8 @@ const Projects = () => {
           <div className="project-card">
             <a href= "https://www.figma.com/design/Y9HeXRHVEW5sb3id6oyqHt/Test-V.-Create-a-Prototype-in-Figma?node-id=0-1&t=ZCRqz88CoI5SQaXq-1" target = "_blank"> <img src={proj2} alt="Project 2" className="project-img" /></a>
             <div className="project-tags">
-              <span>Mob App Dev</span>
-              <span>Python</span>
+              <span>UI/UX Design</span>
+              <span>Figma</span>
             </div>
           </div>
         
