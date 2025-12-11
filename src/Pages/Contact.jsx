@@ -14,12 +14,10 @@ const Contact = () => {
       <hr className="divider" />
       </div> 
       <div className="contact-container">
-        {/* Image Section */}
         <div className="contact-image">
           <img src={ContactImg} alt="Contact" className="con-img" />
         </div>
 
-        {/* Text Section */}
         <div className="contact-text">
           <h2 className="contact-label">
             Ready to take your project to <span className="highlighted-text">the next level</span>? Let’s talk!
