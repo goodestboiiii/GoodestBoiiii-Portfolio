@@ -1,7 +1,4 @@
-html, body{
-    scroll-behavior: smooth;
-    
-}
+
 
 .kilowhatt-section{
     background-color: #1D1919;
@@ -57,4 +54,29 @@ html, body{
     color:#F34343;
     text-align: right;
     text-decoration: none;
+}
+
+@media (max-width: 1199px) {
+  .kilowhatt-section {
+    padding: 2rem 5rem;
+  }
+
+  .project-title h1 {
+    font-size: 36px;
+    text-align: center;
+  }
+}
+
+@media (max-width: 900px) {
+  .kilowhatt-section {
+    padding: 5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .kilowhatt-section {
+    padding: 1.5rem;
+  }
+
+
 }

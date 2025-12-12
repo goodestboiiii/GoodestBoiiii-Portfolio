@@ -7,12 +7,10 @@ import Skills from './Pages/Skills.jsx';
 import Projects from './Pages/Projects.jsx';
 import Contact from './Pages/Contact.jsx';
 import Kilowhatt from './Pages/Kilowhatt.jsx';
-import ScrollToTop from './Components/ScrollToTop';
 
 function App() {
   return (
     <Router>
-      <ScrollToTop />
       <Routes>
         <Route
           path="/"
