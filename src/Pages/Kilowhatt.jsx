@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from "react-router-dom";
+import { HashLink } from 'react-router-hash-link';
 import './Kilowhatt.css';
 import kilowhatt from '../img/kilowhatt.png';
 import renterWf from '../img/renter-wireframe.png'
@@ -12,7 +12,7 @@ const Kilowhatt = () => {
   return (
     <section className="kilowhatt-section" id="kilowhatt">
       <div className="kilowhatt-container">
-        <div><Link to="/projects" className="back-btn"><FaChevronLeft/> Back</Link></div>
+        <div><HashLink to="/projects#projects" className="back-btn"><FaChevronLeft/> Back</HashLink></div>
         <div className="main-img">
             <img src={kilowhatt} alt="Kilowhatt Project" className="cover-img" />
         </div>

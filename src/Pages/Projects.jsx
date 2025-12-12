@@ -1,9 +1,10 @@
-import { Link } from "react-router-dom";
 import React, { useEffect } from 'react';
+import { HashLink } from 'react-router-hash-link';
 import './Projects.css';
 import { FaChevronRight } from "react-icons/fa";
 import kilowhatt from '../img/kilowhatt.png';
 import proj3 from '../img/project3.png';
+
 
 
 
@@ -64,9 +65,9 @@ const Projects = () => {
                 </p>
               </div>
               <div className="project-link">
-                <Link to="/kilowhatt" className="case-study-btn">
+                <HashLink to="/kilowhatt#kilowhatt" className="case-study-btn">
                   Case Study <FaChevronRight />
-                </Link>
+                </HashLink>
               </div>
             </div>
           </div>
