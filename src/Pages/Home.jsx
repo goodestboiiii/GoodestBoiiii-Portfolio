@@ -26,7 +26,7 @@ const Home = () => {
             where I can grow and contribute.
           </p>
           <div className="home-buttons">
-            <button className="btn btn-projects"><a href='https://drive.google.com/file/d/1HwXPpYvAAzaPudITnRt8ffF6Rrd-jqNJ/view?usp=sharing' target='_blank'>Resume</a></button>
+            <button className="btn btn-projects"><a href='https://drive.google.com/file/d/1iVGpiKUCWkkiYB7rfU46ngBuWoBGin_z/view?usp=sharing' target='_blank'>Resume</a></button>
             <button className="btn btn-contact"><a href='#contact'>Get in touch!</a></button>
           </div>
         </div>
